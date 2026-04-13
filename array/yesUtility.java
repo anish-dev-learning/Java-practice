@@ -18,7 +18,7 @@ public class YesUtility {
     public static void displayArray(int[] arr){
         int i=0;
         while (i<arr.length) {
-            System.out.print(numArray[i]+ " ");
+            System.out.print(arr[i]+ " ");
             i++;
         }
         System.out.println();

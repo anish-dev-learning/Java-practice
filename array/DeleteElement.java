@@ -34,6 +34,7 @@ public class DeleteElement {
         if (count == 0) {
             System.out.println("Number not found. Original array:");
             printArray(arr);
+            input.close();
             return;
         }
 

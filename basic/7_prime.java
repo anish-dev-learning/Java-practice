@@ -28,8 +28,5 @@ public class prime {
             i++;
         }
         return true;
-        
-
-       
     }
 }

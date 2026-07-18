@@ -1,22 +1,19 @@
-package oops;
+class Car {
+    String color;   // state
+    int speed;      // state
 
-public class car {
-    //instance variables
-    int noOfWheels;
-    string color;
-    float maxSpeed;
-    float currentFuelInLiters;
-    int noOfSeats;
+    void drive() {  // behavior
+        System.out.println("Car is moving");
+    }
+}
 
-    //instance methods
-    public void drive(){
-        System.out.println("Car is driving" );
-        currentFuelInLiters--;
-    }
-    public void addFuel(float fuel){
-        currentFuelInLiters = currentFuelInLiters + fuel;
-    }
-    public float getCurrentFuelLevel(){
-        return currentFuelInLiters;
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car(); // object creation
+
+        myCar.color = "Red";
+        myCar.speed = 100;
+
+        myCar.drive();
     }
 }
